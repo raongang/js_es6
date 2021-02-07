@@ -43,6 +43,7 @@ wan.foo(); //31
 */
 
 //Example3
+/*
 var age = 100;
 
 var ken = {
@@ -63,3 +64,21 @@ ken.foo(); //35
 wan.foo(); //31
 foo(); // ※ 이거 dot 방식이 아니라 일반방식 함수 호출이니깐 window 객체를 가르키므로 this = 100이 된다.
 
+*/
+
+
+// Example #4 - 프로토타입의 this
+
+function Person(name){
+    this.name = name;
+}
+
+Person.prototype.getName = function(){
+    return this.name;
+}
+
+var me = new Person('Lee');
+console.log(me.getName());
+
+Person.prototype.name = 'KIM';
+console.log(Person.prototype.getName());

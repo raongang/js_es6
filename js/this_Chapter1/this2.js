@@ -42,3 +42,15 @@ function bar(){
 }
 
 foo3(); //100
+
+// ※ 중요  Example #4
+// 기본적으로 this는 전역객체(global object) 에 바인딩된다. 전역함수는 물론이고, 심지어 내부 함수의 경우에도 this는 외부함수가 아닌 전역함수에 바인딩된다.
+
+function outer(){
+    console.log('outer this : ' , this); //windows
+    function inner(){
+        console.log('inner this : ' , this); //windows
+    }
+    inner();
+}
+outer();

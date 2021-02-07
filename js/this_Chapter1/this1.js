@@ -10,6 +10,7 @@
 * 
 */
 
+/*
  var name ='window name';
 
  function log(){
@@ -25,7 +26,7 @@
   obj.logName(); //ken
 
   console.log("=================================");
-
+*/
 
 
  

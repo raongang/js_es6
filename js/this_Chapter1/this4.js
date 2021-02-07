@@ -77,3 +77,68 @@ var ken = {
 var bar = foo.bind(ken);
 bar(1,2,3,4,5);
 */
+
+// Example #5 - callback에서의 사용
+/*
+
+function Person(name) {
+    this.name = name;
+  }
+
+  Person.prototype.doSomething = function(callback){
+    if(typeof callback == 'function') {
+        // --------- 1
+        callback(); // foo()일반함수 호출.
+      }    
+  };
+
+  function foo() {
+    console.log(this.name); // --------- 2 this는 전역객체를 가르킨다. 왜냐?일반함수 호출로 내부 함수나 메소드,콜백은 전부 windows를 가르키므로.
+  }
+
+  var p = new Person('Lee');
+  p.doSomething(foo);  // undefined
+
+  */
+
+  // Example #6 - Example#5 해결
+  /*
+  function Person(name) {
+    this.name = name;
+  }
+  
+  Person.prototype.doSomething = function (callback) {
+    if (typeof callback == 'function') {
+      callback.call(this);
+    }
+  };
+  
+  function foo() {
+    console.log(this.name);
+  }
+  
+  var p = new Person('Lee');
+  p.doSomething(foo);  // 'Lee'
+  */
+
+  
+  // Example #7 - Example#5 해결2
+
+  function Person(name) {
+    this.name = name;
+  }
+  
+  Person.prototype.doSomething = function (callback) {
+    if (typeof callback == 'function') {
+      // callback.call(this);
+      // this가 바인딩된 새로운 함수를 호출 , bind는 바로 실행하는건 아니라서 ()를 이용해서 실행시켜줘야 한다.
+      callback.bind(this)(); 
+    }
+  };
+  
+  function foo() {
+    console.log('#', this.name);
+  }
+  
+  var p = new Person('Lee');
+  p.doSomething(foo);  // 'Lee'
