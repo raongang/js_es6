@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <style>
+  div.one{
+  background-color:red;
+  width:100px;
+  height:100px;
+}
+
+div.two{
+  background-color:green;
+  width:70px;
+  height:70px;
+}
+
+div.three{
+  background-color:blue;
+  width:40px;
+  height:40px;
+}
+  </style>
+
+  <script>
+      window.onload = function(){  
+        document.getElementById("parent-list").addEventListener("click", function(e) {
+            //event.currentTarget은 이벤트가 걸려있는 위치를 반환(this가 가리키는 것과 같다.)
+            console.log(e.currentTarget);  // <ul id="parent-list"></ui>
+            console.log(this);
+
+            console.log(e.target); // <li id="1">
+
+
+        });
+    };
+
+  </script>
+</head>
+<body>
+    <ul id="parent-list">
+        <li id="1">Item 1</li>
+        <li id="2">Item 2</li>
+        <li id="3">Item 3</li>
+        <li id="4">Item 4</li>
+        <li id="5">Item 5</li>
+        <li id="6">Item 6</li>
+    </ul>
+
+</body>
+</html>
