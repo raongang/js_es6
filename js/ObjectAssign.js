@@ -3,17 +3,18 @@
 const target = { a : 1 , b : 2 };
 const source = { b : 4 , c : 5};
 
-const returnedTarget = Object.assign(target,source);
+//const returnedTarget = Object.assign(target,source);
 
 // target것도 덮어쓰기가 된다.
-console.log(target);  // expected output: Object { a: 1, b: 4, c: 5 }
-console.log(returnedTarget); // expected output: Object { a: 1, b: 4, c: 5 }
+//console.log(target);  // expected output: Object { a: 1, b: 4, c: 5 }
+//console.log(returnedTarget); // expected output: Object { a: 1, b: 4, c: 5 }
 
 console.log("================================");
 const returnedTarget2 = Object.assign({},target,source);
-console.log(target);
-console.log(soruce);
-console.log(returnedTarget2);
+console.log(target); // { a: 1, b: 2 }
+console.log(source); // { b: 4, c: 5 } 
+console.log(returnedTarget2); //{ a: 1, b: 4, c: 5 }
+
 
 
 
