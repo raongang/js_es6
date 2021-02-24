@@ -30,7 +30,6 @@
 
 // console.log(Myname('man',20));
 
-
 /*
 const myname2  = (gender,age) => {
   return gender + age;

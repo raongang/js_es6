@@ -16,5 +16,14 @@ console.log(source); // { b: 4, c: 5 }
 console.log(returnedTarget2); //{ a: 1, b: 4, c: 5 }
 
 
+console.log("================================");
+
+const target2 = { color : 'yellow' };
+const source2 = { color : 'red' };
+
+const assingTemp = Object.assign({},target2, source2);
+console.log(assingTemp);
+
+
 
 
