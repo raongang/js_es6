@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!--
+    [this-javascript]
+      - javascript의 경우에는 이벤트가 발생한 태그요소가 표시
+    
+    [$(this) - Jquery]
+      - 이벤트가 발생한 요소의 정보들이 Object로 표시.
+
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#div1").click(function(){
+                console.log(this);  //<div id="div1" style="height: 100px;width:300px; border:1px solid black; background-color: yellow;"></div>
+                console.log("----------------"); // r.fn.init[div#div1]
+                console.log($(this));           
+                console.log("----------------");
+                $("#test1").text(this); //[object HTMLDivElement]
+                $("#test2").text($(this));//[object Object]
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div id="div1" style="height: 100px;width:300px; border:1px solid black; background-color: yellow;"></div>
+    <div id="test1"></div>
+    <div id="test2"></div>
+</body>
+</html>
