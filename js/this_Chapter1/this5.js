@@ -48,8 +48,8 @@
   
   console.log(ken);
   console.log(wan);
-
 */
+
 
 // Example #5
 /*
@@ -65,6 +65,7 @@ console.log(you);
 */
 
 // Example #6
+/**/
 function Person(name) {
     // new없이 호출하는 경우, 전역객체에 name 프로퍼티를 추가
     this.name = name;
@@ -76,3 +77,4 @@ function Person(name) {
   
   console.log(me); // undefined
   console.log(window.name); // Lee
+  

@@ -18,7 +18,8 @@
 
  //ken이 this로 설정된다.
  ken.foo(); //35
-*/
+ */
+
 
  // Example #2
 /*
@@ -63,12 +64,12 @@ var foo = ken.foo;
 ken.foo(); //35
 wan.foo(); //31
 foo(); // ※ 이거 dot 방식이 아니라 일반방식 함수 호출이니깐 window 객체를 가르키므로 this = 100이 된다.
-
 */
 
 
-// Example #4 - 프로토타입의 this
 
+// Example #4 - 프로토타입의 this
+/**/
 function Person(name){
     this.name = name;
 }

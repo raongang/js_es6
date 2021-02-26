@@ -27,7 +27,7 @@
  */
 
  // Example #2
-/*
+/**
  var age = 100;
 
  function foo ( a,b,c,d,e) {
@@ -58,8 +58,8 @@
 
  var bar = foo.bind(ken); // bind? 첫번째 인자를 this값으로 설정한다. call, apply와 다르게 함수를 바로 실행하지는 않는다.
  bar(); //34 - 일반실행함수가 아니라 bind를 이용한것이기 때문에 window age를 가져오는게 아님.
- 
-*/
+ */ 
+
 
 // Example #4
 /*
@@ -98,8 +98,8 @@ function Person(name) {
 
   var p = new Person('Lee');
   p.doSomething(foo);  // undefined
-
-  */
+*/
+  
 
   // Example #6 - Example#5 해결
   /*
@@ -123,6 +123,7 @@ function Person(name) {
 
   
   // Example #7 - Example#5 해결2
+  /*
 
   function Person(name) {
     this.name = name;
@@ -142,3 +143,4 @@ function Person(name) {
   
   var p = new Person('Lee');
   p.doSomething(foo);  // 'Lee'
+  */

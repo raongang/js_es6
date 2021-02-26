@@ -91,4 +91,4 @@ var obj = {
   }
 };
 
-obj.foo();
+obj.foo(); 
