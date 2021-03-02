@@ -5,7 +5,6 @@
 // Example #1
 function sum(w,x,y,z){
     console.log("x >> " + x + " y >> " + y + " z >> " + z);
-    
     return w+x+y+z;
 }
 
