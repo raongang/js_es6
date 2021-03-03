@@ -10,7 +10,7 @@
 //   const tiger = animals.tiger;
 //   console.log(cat); // CAT
 //   console.log(dog); // DOG
-//   console.log(tiger); // TIGERz
+//   console.log(tiger); // TIGER
 
  
 //위와 같이 작성하면 비구조화 할당을 수행하며, 배열의 경우 좌항의 index값에 값에 할당되었다면, 객체는 같은 key에 있는 값이 담긴다.
