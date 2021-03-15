@@ -80,9 +80,8 @@ bar(1,2,3,4,5);
 
 // Example #5 - callback에서의 사용
 /*
-
 function Person(name) {
-    this.name = name;
+    this.name = name; 
   }
 
   Person.prototype.doSomething = function(callback){
@@ -97,8 +96,9 @@ function Person(name) {
   }
 
   var p = new Person('Lee');
+  console.log(p.name);
   p.doSomething(foo);  // undefined
-*/
+*/ 
   
 
   // Example #6 - Example#5 해결

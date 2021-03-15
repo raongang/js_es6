@@ -13,11 +13,11 @@
      value : 100,
      printMessage : console.log(this.value),
      foo : function(){
-         console.log("foo's this " , this);
+         //console.log("foo's this " , this);
          console.log("foo's this.value " , this.value);
          
          function bar() {
-            console.log("bar's this: ",  this); // window
+           // console.log("bar's this: ",  this); // window
             console.log("bar's this.value: ", this.value); // 1
           }
           bar();
@@ -35,7 +35,7 @@
 
 
  // Example #2
- /*
+ /* 
 var value = 1;
 
 var obj = {
@@ -51,6 +51,7 @@ var obj = {
 
 obj.foo();
 */
+
 
 // Example #3 - Example #2의 해결법1
 /*
@@ -71,6 +72,7 @@ var obj = {
 obj.foo();
 */
 
+
 // Example #3 - Example #2의 해결법2
 
 var value = 1;
@@ -80,6 +82,7 @@ var obj = {
   foo: function() {
     console.log("foo's this: ",  this);  // obj
     console.log("foo's this.value: ",  this.value); // 100
+    
     function bar(a, b) {
       console.log("bar's this: ",  this); // obj
       console.log("bar's this.value: ", this.value); // 100
@@ -90,5 +93,4 @@ var obj = {
     bar.bind(obj)(1, 2);
   }
 };
-
 obj.foo(); 
