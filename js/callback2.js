@@ -2,6 +2,7 @@
 //callback 적용전
 /*
 function findUser(id) {
+    
     const user = {
       id: id,
       name: "User" + id,
@@ -11,12 +12,14 @@ function findUser(id) {
   }
 
   const user = findUser(1);
+
   for(var key in user){
-      //console.log("Attributes : " + key + ", value : " + user[key]);
+      console.log("Attributes : " + key + ", value : " + user[key]);
   }
   */
+  
 
-  /* callback 적용후
+  /* callback 적용후 
 
   function findUserAndCallBack(id,cb){
       const user = { 
@@ -32,7 +35,9 @@ function findUser(id) {
         console.log("Attributes : " + key + ", value : " + user[key]);
     }
   });
+
   */
+  
 
   
   /*
@@ -57,11 +62,14 @@ function findUser(id) {
         return user;
   }
 
+
   const user = asyncFindUser(1);
   console.log(user);
 
   console.log("=====================");
-
+  
+  
+  /*
   // Example #2
   function findUserAndCallback(id,cb){
       setTimeout(function(){
@@ -78,4 +86,4 @@ function findUser(id) {
 
   findUserAndCallback(1,function(user){
       console.log("user : ",user);
-  })
+  })  */
