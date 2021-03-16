@@ -12,15 +12,17 @@
 const days = ["Mon", "Tue", "Wed", "Thus", "Fri"];
 
 days.map(function(elements,index,array){
-    console.log("element : " , elements);
-    console.log("index : " ,   index);
-    console.log("array : " ,   array);
+    //console.log("element : " , elements);
+    //console.log("index : " ,   index);
+    //console.log("array : " ,   array);
 });
 
 //출력방법1) arrow 연산자 이용.
 days.map(day=>console.log(day));
 
 //출력방법2) 일반 함수 출력.
+/*
 days.map(function(element){
     console.log(element);
 });
+*/

@@ -22,27 +22,34 @@
  });
  */
 
-
- 
-
-
-  // conse
-
-
+// conse
+/*
  const Myname = function printMessage(gender,age){
    return gender + age;
  };
 
 const MyName = ({gender, age}) => { 
-  return ("this : " , console.log(gender+age))
+  console.log(gender);
 };
-
- console.log(Myname('man',20));
-
-/*
-const myname2  = (gender,age) => {
-  return gender + age;
-};
-
-console.log(myname2('man',20));
 */
+ //console.log(Myname('man',20));
+
+
+
+ //react에서 주로 쓰는 문법.
+const myname2  = ({gender,age}) => {
+  
+  console.log({gender});
+  console.log({age});
+
+  console.log("====================");
+  console.log(gender);
+  console.log(age);
+
+  console.log("====================");
+
+}
+
+myname2({gender:'man',age:20});
+
+

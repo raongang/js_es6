@@ -1,5 +1,3 @@
-
-
 //Example #1
 function getClosure(){
     var text = 'variable 1';
