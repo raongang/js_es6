@@ -12,9 +12,9 @@
 const days = ["Mon", "Tue", "Wed", "Thus", "Fri"];
 
 days.map(function(elements,index,array){
-    //console.log("element : " , elements);
-    //console.log("index : " ,   index);
-    //console.log("array : " ,   array);
+    console.log("element : " , elements);
+    console.log("index : " ,   index);
+    console.log("array : " ,   array);
 });
 
 //출력방법1) arrow 연산자 이용.
