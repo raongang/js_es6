@@ -1,8 +1,6 @@
-
 //callback 적용전
 /*
 function findUser(id) {
-    
     const user = {
       id: id,
       name: "User" + id,
@@ -37,8 +35,6 @@ function findUser(id) {
   });
 
   */
-  
-
   
   /*
      callback 함수를 이용한 동기,비동기 방식 
