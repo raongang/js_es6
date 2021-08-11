@@ -12,6 +12,8 @@
 // Example#1
 
 var testArray = [1,2,3,4,5];
+
+/*
 var new_Array = testArray.filter(function(element,index,array){
     console.log("element : " , element);
     console.log("index : " ,   index);
@@ -19,17 +21,20 @@ var new_Array = testArray.filter(function(element,index,array){
     
 })
 
+
 console.log("==================================");
 var new_Array2 = testArray.filter(function(element){
     return element >= 7;
 });
 console.log(new_Array2);
+*/
 
 
 var new_Array3 = testArray.filter( element => {
     return element <=3;
 });
 console.log("new_Array3 : " + new_Array3);
+
 
 
 // 정수배열에서 5의 배수인 정수만 모으기

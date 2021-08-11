@@ -9,12 +9,12 @@ function sum(w,x,y,z){
 }
 
 const numbers = [1,2,3];
-
 //sum(...numbers);
+
 //sum(...numbers,4);
 
 //전개구문 이용전.
-//sum.apply(null,numbers);
+sum.apply(null,numbers);
 /*
 console.log("======apply() 대체=======");
 
@@ -71,7 +71,7 @@ const findIndex = arr.findIndex( (element, index, array)  => {
 console.log("findIndex >> " , findIndex);
 */
 
-/**/ 
+/*
 console.log("====== react 응용 =======");
 
 var state = { 
@@ -111,3 +111,4 @@ nextTodos[index2] = {
 }
 
 console.log(nextTodos);
+*/ 

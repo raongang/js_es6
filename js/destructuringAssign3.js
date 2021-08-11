@@ -1,5 +1,6 @@
 /* 함수에서의 비구조화 할당 */
 
+/*
  function renderUser({name,age,addr}) {
      console.log(name + " " + age + " " + addr);
  }
@@ -9,7 +10,7 @@
      {name: 'joe', age: 20, addr:'usa'},
      {name: 'miko', age: 30, addr:'jp'}
    ];
-
+*/
 /*
  users.map(function(user){
     renderUser(user);
@@ -37,10 +38,12 @@ const MyName = ({gender, age}) => {
 
 
  //react에서 주로 쓰는 문법.
+ /*
 const myname2  = ({gender,age}) => {
   
   console.log({gender});
   console.log({age});
+
 
   console.log("====================");
   console.log(gender);
@@ -51,5 +54,15 @@ const myname2  = ({gender,age}) => {
 }
 
 myname2({gender:'man',age:20});
+*/
 
 
+const myname3 = function({gender,age}){
+
+  console.log(gender);
+  console.log(age);
+
+
+}
+
+myname3({gender:'man',age:20});

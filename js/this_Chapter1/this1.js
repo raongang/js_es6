@@ -10,10 +10,11 @@
 * 
 */
 
-/*
+/**/
  var name ='window name';
 
  function log(){
+     var name="테스트";
      console.log(this.name); //'this' is always an object(객체).
  }
 
@@ -26,7 +27,7 @@
   obj.logName(); //ken
 
   console.log("=================================");
-*/
+
 
 
  

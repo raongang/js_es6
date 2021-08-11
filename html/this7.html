@@ -29,8 +29,8 @@ div.three{
       window.onload = function(){  
         document.getElementById("parent-list").addEventListener("click", function(e) {
             //event.currentTarget은 이벤트가 걸려있는 위치를 반환(this가 가리키는 것과 같다.)
-            console.log(e.currentTarget);  // <ul id="parent-list"></ui>
-            console.log(this);
+            console.log("e.currentTarget >> " , e.currentTarget);  // <ul id="parent-list"></ui>
+            console.log("this >> " , this);
 
             console.log(e.target); // <li id="1">
 

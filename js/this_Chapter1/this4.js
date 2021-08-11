@@ -6,6 +6,7 @@
 
  // Example #1
  /*
+ 
  var age = 100;
 
  function foo(){
@@ -23,8 +24,7 @@
  foo(); //일반 함수 호출이니깐 100
  foo.call(wan); // wan 객체로 바뀌어서 31
  foo.apply(ken); // ken객체로 바뀌어서 35
-
- */
+*/
 
  // Example #2
 /**
@@ -75,11 +75,12 @@ var ken = {
 };
 
 var bar = foo.bind(ken);
+console.log("================");
 bar(1,2,3,4,5);
 */
 
 // Example #5 - callback에서의 사용
-/*
+/*  */ 
 function Person(name) {
     this.name = name; 
   }
@@ -98,8 +99,8 @@ function Person(name) {
   var p = new Person('Lee');
   console.log(p.name);
   p.doSomething(foo);  // undefined
-*/ 
-  
+
+
 
   // Example #6 - Example#5 해결
   /*

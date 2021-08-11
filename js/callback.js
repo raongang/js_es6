@@ -8,7 +8,6 @@ var opt = { title : "",
 
 function execute(opts){
    
- 
     if(opts.callback != undefined){
         if(opts.ajax != undefined && opts_ajax ==true){
             console.log("here1");

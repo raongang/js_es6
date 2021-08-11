@@ -1,4 +1,5 @@
 //Example #1
+/*
 function getClosure(){
     var text = 'variable 1';
 
@@ -12,9 +13,11 @@ var closure = getClosure();
 console.log(closure());
 
 console.log("==================================");
+*/
 
+/*
 // Example #2 
-
+*/
 var base = 'Hello, ';
 function sayHelloTo(name){
     var text = base + name;

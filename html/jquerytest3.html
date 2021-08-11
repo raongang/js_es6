@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<!--
+   자바스크립트 this 를 제이쿼리를 통해 표현하고 싶다면 ???
+     -> 자바스크립트의 this는 jQuery의 $(this)[0] 으로 동일 결과
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#div1").click(function(){
+        console.log(this)
+        console.log("----------  this -------------")
+        console.log("---------[this 는 $(this)[0]와 같다!!! ]--------------")
+        console.log("----------  $(this)[0] -------------")
+        console.log($(this)[0])
+    });
+});
+</script>
+</head>
+<body>
+ 
+<div id="div1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+ 
+ 
+</body>
+</html>

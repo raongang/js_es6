@@ -1,11 +1,11 @@
 
 /** 
  *  메소드의 내부 함수일 경우에도 this는 전역객체에 binding.
- */
+*/
 
  // Example #1
 
- /*
+/* 
  var value = 1;
 
  var obj = {
@@ -24,7 +24,7 @@
 
      }
  };
- obj.printMessage; //객체의 변수값을 가져오는거랑 이때 this는 전역객체.
+ obj.printMessage; //객체의 변수값을 가져오는거라 이때 this는 전역객체.
  obj.foo();
 */
 
@@ -35,7 +35,7 @@
 
 
  // Example #2
- /* 
+ /*
 var value = 1;
 
 var obj = {
@@ -50,7 +50,7 @@ var obj = {
 };
 
 obj.foo();
-*/
+ */
 
 
 // Example #3 - Example #2의 해결법1
@@ -74,7 +74,7 @@ obj.foo();
 
 
 // Example #3 - Example #2의 해결법2
-
+/**/
 var value = 1;
 
 var obj = {
@@ -88,9 +88,9 @@ var obj = {
       console.log("bar's this.value: ", this.value); // 100
       console.log("bar's arguments: ", arguments);
     }
-    bar.apply(obj, [1, 2]);
-    bar.call(obj, 1, 2);
-    bar.bind(obj)(1, 2);
+    //bar.apply(obj, [1, 2]);
+    //bar.call(obj, 1, 2);
+    //bar.bind(obj)(1, 2);
   }
 };
 obj.foo(); 

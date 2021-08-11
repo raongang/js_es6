@@ -30,3 +30,4 @@ const [one,two] = array;
 console.log("=========================");
 console.log(one);
 console.log(two);
+

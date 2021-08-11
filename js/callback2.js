@@ -17,15 +17,15 @@ function findUser(id) {
   */
   
 
-  /* callback 적용후 
+  /* callback 적용후  
 
-  function findUserAndCallBack(id,cb){
+  function findUserAndCallBack(id,callback){
       const user = { 
           id : id,
           name : "User" + id,
           email : id + "@test.com",
       }
-      cb(user);
+      callback(user);
   }
 
   findUserAndCallBack(1,function(user){
@@ -33,14 +33,13 @@ function findUser(id) {
         console.log("Attributes : " + key + ", value : " + user[key]);
     }
   });
-
   */
-  
+
   /*
      callback 함수를 이용한 동기,비동기 방식 
        - 비동기(Asynchronous) 함수란 쉽게 설명하면 호출부에서 실행 결과를 가다리지 않아도 되는 함수입니다. 
         반대로 동기 함수(Synchronous) 함수는 호출부에서 실행 결과가 리턴될 때 까지 기다려야 하는 함수입니다.
-  */
+ 
 
   // Example #1
   function asyncFindUser(id){
@@ -64,7 +63,7 @@ function findUser(id) {
 
   console.log("=====================");
   
-  
+   */
   /*
   // Example #2
   function findUserAndCallback(id,cb){
